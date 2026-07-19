@@ -1,0 +1,822 @@
+{
+  "EducationLevelSeeder": [
+    {
+      "level": "Trung học phổ thông",
+      "major": "Không chuyên ngành"
+    },
+    {
+      "level": "Trung cấp",
+      "major": "Công nghệ thông tin"
+    },
+    {
+      "level": "Trung cấp",
+      "major": "Kế toán"
+    },
+    {
+      "level": "Cao đẳng",
+      "major": "Quản trị kinh doanh"
+    },
+    {
+      "level": "Cao đẳng",
+      "major": "Điện tử"
+    },
+    {
+      "level": "Đại học",
+      "major": "Công nghệ thông tin"
+    },
+    {
+      "level": "Đại học",
+      "major": "Kinh tế"
+    },
+    {
+      "level": "Đại học",
+      "major": "Luật"
+    },
+    {
+      "level": "Đại học",
+      "major": "Y học"
+    },
+    {
+      "level": "Đại học",
+      "major": "Xây dựng"
+    }
+  ],
+  "AllowanceEmployeeSeeder": [
+    {
+      "allowance_id": 1,
+      "employee_id": 1,
+      "total_allowance": 1000000.00
+    },
+    {
+      "allowance_id": 2,
+      "employee_id": 2,
+      "total_allowance": 2000000.00
+    }
+  ],
+  "AllowanceSeeder": [
+    {
+      "allowance_type_id": 1,
+      "amount": 1000000.00,
+      "is_seniority_base": false
+    },
+    {
+      "allowance_type_id": 2,
+      "amount": 2000000.00,
+      "is_seniority_base": false
+    }
+  ],
+  "AllowanceTypeSeeder": [
+    {
+      "name": "Trợ cấp ốm đau",
+      "description": "Trợ cấp khi ốm đau"
+    },
+    {
+      "name": "Trợ cấp thai sản",
+      "description": "Trợ cấp cho phụ nữ mang thai"
+    },
+    {
+      "name": "Trợ cấp tai nạn lao động",
+      "description": "Trợ cấp khi tai nạn lao động"
+    },
+    {
+      "name": "Trợ cấp hưu trí",
+      "description": "Trợ cấp khi nghỉ hưu"
+    },
+    {
+      "name": "Trợ cấp tử tuất",
+      "description": "Trợ cấp khi mất"
+    },
+    {
+      "name": "Trợ cấp thôi việc",
+      "description": "Trợ cấp khi nghỉ việc"
+    },
+    {
+      "name": "Trợ cấp mất việc làm",
+      "description": "Trợ cấp khi mất việc"
+    }
+  ],
+  "AttendanceSeeder": [
+    {
+      "employee_id": 1,
+      "attendance_date": "2025-05-18",
+      "check_in": "08:00:00",
+      "check_out": "17:00:00",
+      "status": "Present"
+    },
+    {
+      "employee_id": 2,
+      "attendance_date": "2025-05-18",
+      "check_in": "08:15:00",
+      "check_out": null,
+      "status": "Late"
+    }
+  ],
+  "ContractEmployeePositionSeeder": [
+    {
+      "employee_id": 1,
+      "contract_id": 1,
+      "position_id": 1,
+      "is_main": true,
+      "start_date": "2024-01-01",
+      "end_date": null,
+      "base_salary": 8000000.00,
+      "ratio": 1.0
+    },
+    {
+      "employee_id": 2,
+      "contract_id": 2,
+      "position_id": 2,
+      "is_main": true,
+      "start_date": "2024-02-01",
+      "end_date": "2024-08-01",
+      "base_salary": 10000000.00,
+      "ratio": 1.5
+    },
+    {
+      "employee_id": 3,
+      "contract_id": 3,
+      "position_id": 3,
+      "is_main": true,
+      "start_date": "2024-03-01",
+      "end_date": "2025-03-01",
+      "base_salary": 12000000.00,
+      "ratio": 2.0
+    }
+  ],
+  "ContractSeeder": [
+    {
+      "contract_code": "HD001",
+      "employee_id": 1,
+      "salary_id": 1,
+      "type": 1,
+      "start_date": "2024-01-01",
+      "end_date": null,
+      "sign_date": "2024-01-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 1
+    },
+    {
+      "contract_code": "HD002",
+      "employee_id": 2,
+      "salary_id": 2,
+      "type": 2,
+      "start_date": "2024-02-01",
+      "end_date": "2024-08-01",
+      "sign_date": "2024-02-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    },
+    {
+      "contract_code": "HD003",
+      "employee_id": 3,
+      "salary_id": 3,
+      "type": 3,
+      "start_date": "2024-03-01",
+      "end_date": "2025-03-01",
+      "sign_date": "2024-03-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 1
+    },
+    {
+      "contract_code": "HD004",
+      "employee_id": 4,
+      "salary_id": 4,
+      "type": 4,
+      "start_date": "2024-04-01",
+      "end_date": "2026-04-01",
+      "sign_date": "2024-04-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 1
+    },
+    {
+      "contract_code": "HD005",
+      "employee_id": 5,
+      "salary_id": 5,
+      "type": 5,
+      "start_date": "2024-05-01",
+      "end_date": "2027-05-01",
+      "sign_date": "2024-05-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 1
+    },
+    {
+      "contract_code": "HD006",
+      "employee_id": 6,
+      "salary_id": 1,
+      "type": 1,
+      "start_date": "2024-06-01",
+      "end_date": null,
+      "sign_date": "2024-06-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    },
+    {
+      "contract_code": "HD007",
+      "employee_id": 7,
+      "salary_id": 2,
+      "type": 2,
+      "start_date": "2024-07-01",
+      "end_date": "2024-12-31",
+      "sign_date": "2024-07-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    },
+    {
+      "contract_code": "HD008",
+      "employee_id": 8,
+      "salary_id": 3,
+      "type": 3,
+      "start_date": "2024-08-01",
+      "end_date": "2025-08-01",
+      "sign_date": "2024-08-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    },
+    {
+      "contract_code": "HD009",
+      "employee_id": 9,
+      "salary_id": 4,
+      "type": 4,
+      "start_date": "2024-09-01",
+      "end_date": "2026-09-01",
+      "sign_date": "2024-09-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    },
+    {
+      "contract_code": "HD010",
+      "employee_id": 10,
+      "salary_id": 5,
+      "type": 5,
+      "start_date": "2024-10-01",
+      "end_date": "2027-10-01",
+      "sign_date": "2024-10-01",
+      "contract_file": null,
+      "status": "Active",
+      "note": null,
+      "year_of_service": 0
+    }
+  ],
+  "ContractTypeSeeder": [
+    {
+      "name": "Không xác định thời hạn",
+      "description": "Hợp đồng chính thức"
+    },
+    {
+      "name": "6 tháng",
+      "description": "Hợp đồng thử việc"
+    },
+    {
+      "name": "1 năm",
+      "description": "Hợp đồng 1 năm"
+    },
+    {
+      "name": "2 năm",
+      "description": "Hợp đồng 2 năm"
+    },
+    {
+      "name": "3 năm",
+      "description": "Hợp đồng 3 năm"
+    }
+  ],
+  "DepartmentSeeder": [
+    {
+      "name": "Phòng Nhân sự",
+      "address": "Tầng 1, Tòa nhà ABC",
+      "phone": "0123456789",
+      "manager": null
+    },
+    {
+      "name": "Phòng IT",
+      "address": "Tầng 2, Tòa nhà ABC",
+      "phone": "0987654321",
+      "manager": null
+    },
+    {
+      "name": "Phòng Tài chính",
+      "address": "Tầng 3, Tòa nhà ABC",
+      "phone": "0912345678",
+      "manager": null
+    },
+    {
+      "name": "Phòng Kinh doanh",
+      "address": "Tầng 4, Tòa nhà ABC",
+      "phone": "0901234567",
+      "manager": null
+    },
+    {
+      "name": "Phòng Hành chính",
+      "address": "Tầng 5, Tòa nhà ABC",
+      "phone": "0934567890",
+      "manager": null
+    }
+  ],
+  "RoleUserSeeder": [
+    {
+      "user_id": 1,
+      "role_id": 1
+    },
+    {
+      "user_id": 1,
+      "role_id": 5
+    },
+    {
+      "user_id": 2,
+      "role_id": 2
+    },
+    {
+      "user_id": 2,
+      "role_id": 5
+    },
+    {
+      "user_id": 3,
+      "role_id": 3
+    },
+    {
+      "user_id": 3,
+      "role_id": 5
+    },
+    {
+      "user_id": 4,
+      "role_id": 4
+    },
+    {
+      "user_id": 4,
+      "role_id": 5
+    },
+    {
+      "user_id": 5,
+      "role_id": 5
+    },
+    {
+      "user_id": 6,
+      "role_id": 5
+    },
+    {
+      "user_id": 7,
+      "role_id": 5
+    },
+    {
+      "user_id": 8,
+      "role_id": 5
+    },
+    {
+      "user_id": 9,
+      "role_id": 5
+    },
+    {
+      "user_id": 10,
+      "role_id": 5
+    }
+  ],
+  "EmployeeInsuranceSeeder": [
+    {
+      "employee_id": 1,
+      "insurance_id": 1,
+      "actual_employee_pct": 1.5,
+      "actual_company_pct": 3.0,
+      "actual_total_pct": 4.5,
+      "note": null
+    },
+    {
+      "employee_id": 2,
+      "insurance_id": 2,
+      "actual_employee_pct": 0.5,
+      "actual_company_pct": 1.0,
+      "actual_total_pct": 1.5,
+      "note": null
+    }
+  ],
+  "EmployeeSeeder": [
+    {
+      "fullname": "Nguyễn Văn An",
+      "date_of_birth": "1985-01-01",
+      "gender": "Male",
+      "birthplace": "Hà Nội",
+      "ethnicity": "Kinh",
+      "address": "123 Đường ABC",
+      "email": "admin@company.com",
+      "department_id": 1,
+      "education_id": 6,
+      "user_id": 1,
+      "position_id": 1
+    },
+    {
+      "fullname": "Trần Thị Bình",
+      "date_of_birth": "1988-02-02",
+      "gender": "Female",
+      "birthplace": "TP.HCM",
+      "ethnicity": "Kinh",
+      "address": "456 Đường XYZ",
+      "email": "hrm@company.com",
+      "department_id": 1,
+      "education_id": 7,
+      "user_id": 2,
+      "position_id": 2
+    },
+    {
+      "fullname": "Lê Hoàng Nam",
+      "date_of_birth": "1987-03-03",
+      "gender": "Male",
+      "birthplace": "Đà Nẵng",
+      "ethnicity": "Kinh",
+      "address": "789 Đường DEF",
+      "email": "fm@company.com",
+      "department_id": 3,
+      "education_id": 6,
+      "user_id": 3,
+      "position_id": 3
+    },
+    {
+      "fullname": "Phạm Thị Thảo",
+      "date_of_birth": "1990-04-04",
+      "gender": "Female",
+      "birthplace": "Hải Phòng",
+      "ethnicity": "Kinh",
+      "address": "101 Đường GHI",
+      "email": "manager@company.com",
+      "department_id": 4,
+      "education_id": 5,
+      "user_id": 4,
+      "position_id": 4
+    },
+    {
+      "fullname": "Hoàng Minh Đức",
+      "date_of_birth": "1991-05-05",
+      "gender": "Male",
+      "birthplace": "Cần Thơ",
+      "ethnicity": "Kinh",
+      "address": "202 Đường JKL",
+      "email": "employee1@company.com",
+      "department_id": 2,
+      "education_id": 6,
+      "user_id": 5,
+      "position_id": 3
+    },
+    {
+      "fullname": "Nguyễn Thu Hà",
+      "date_of_birth": "1992-06-06",
+      "gender": "Female",
+      "birthplace": "Huế",
+      "ethnicity": "Kinh",
+      "address": "303 Đường MNO",
+      "email": "employee2@company.com",
+      "department_id": 4,
+      "education_id": 6,
+      "user_id": 6,
+      "position_id": 4
+    },
+    {
+      "fullname": "Vũ Đức Mạnh",
+      "date_of_birth": "1992-07-07",
+      "gender": "Male",
+      "birthplace": "Quảng Ninh",
+      "ethnicity": "Kinh",
+      "address": "404 Đường PQR",
+      "email": "user3@company.com",
+      "department_id": 5,
+      "education_id": 3,
+      "user_id": 7,
+      "position_id": 5
+    },
+    {
+      "fullname": "Đặng Bảo Trâm",
+      "date_of_birth": "1993-08-08",
+      "gender": "Female",
+      "birthplace": "Bình Dương",
+      "ethnicity": "Kinh",
+      "address": "505 Đường STU",
+      "email": "user4@company.com",
+      "department_id": 3,
+      "education_id": 2,
+      "user_id": 8,
+      "position_id": 3
+    },
+    {
+      "fullname": "Bùi Văn Kiên",
+      "date_of_birth": "1994-09-09",
+      "gender": "Male",
+      "birthplace": "Đồng Nai",
+      "ethnicity": "Kinh",
+      "address": "606 Đường VWX",
+      "email": "user5@company.com",
+      "department_id": 2,
+      "education_id": 1,
+      "user_id": 9,
+      "position_id": 3
+    },
+    {
+      "fullname": "Lê Thị Lan",
+      "date_of_birth": "1995-10-10",
+      "gender": "Female",
+      "birthplace": "Long An",
+      "ethnicity": "Kinh",
+      "address": "707 Đường YZA",
+      "email": "user6@company.com",
+      "department_id": 1,
+      "education_id": 4,
+      "user_id": 10,
+      "position_id": 2
+    }
+  ],
+  "EmployeeTaskSeeder": [
+    {
+      "task_id": 1,
+      "employee_id": 5,
+      "role": "Thực hiện"
+    },
+    {
+      "task_id": 2,
+      "employee_id": 6,
+      "role": "Thực hiện"
+    }
+  ],
+  "InsuranceSeeder": [
+    {
+      "type": 1,
+      "default_employee_pct": 1.5,
+      "default_company_pct": 3.0,
+      "default_total_pct": 4.5,
+      "note": null
+    },
+    {
+      "type": 2,
+      "default_employee_pct": 0.5,
+      "default_company_pct": 1.0,
+      "default_total_pct": 1.5,
+      "note": null
+    }
+  ],
+  "InsuranceTypeSeeder": [
+    {
+      "name": "Bảo hiểm y tế",
+      "description": "Bảo hiểm y tế cơ bản"
+    },
+    {
+      "name": "Bảo hiểm tai nạn",
+      "description": "Bảo hiểm tai nạn lao động"
+    },
+    {
+      "name": "Bảo hiểm lao động",
+      "description": "Bảo hiểm lao động bắt buộc"
+    },
+    {
+      "name": "Bảo hiểm thất nghiệp",
+      "description": "Bảo hiểm thất nghiệp"
+    },
+    {
+      "name": "Bảo hiểm xã hội",
+      "description": "Bảo hiểm xã hội cơ bản"
+    }
+  ],
+  "LeaveSeeder": [
+    {
+      "employee_id": 1,
+      "approved_by": 1,
+      "approved_date": "2025-05-18",
+      "leave_type_id": 1,
+      "leave_date": "2025-05-20",
+      "note": null,
+      "status": "approved"
+    },
+    {
+      "employee_id": 2,
+      "approved_by": 1,
+      "approved_date": null,
+      "leave_type_id": 2,
+      "leave_date": "2025-05-21",
+      "note": null,
+      "status": "pending"
+    }
+  ],
+  "LeaveTypeSeeder": [
+    {
+      "name": "Nghỉ bệnh",
+      "description": "Nghỉ do ốm đau"
+    },
+    {
+      "name": "Nghỉ lễ",
+      "description": "Nghỉ lễ theo quy định"
+    },
+    {
+      "name": "Nghỉ phép hằng năm",
+      "description": "Nghỉ phép có lương"
+    },
+    {
+      "name": "Nghỉ phép thường",
+      "description": "Nghỉ phép không lương"
+    }
+  ],
+  "PositionSeeder": [
+    {
+      "name": "Giám đốc"
+    },
+    {
+      "name": "Trưởng phòng nhân sự"
+    },
+    {
+      "name": "Trưởng phòng IT"
+    },
+    {
+      "name": "Nhân viên kinh doanh"
+    },
+    {
+      "name": "Nhân viên hành chính"
+    }
+  ],
+  "RoleSeeder": [
+    {
+      "name": "admin",
+      "description": "Quản trị viên hệ thống"
+    },
+    {
+      "name": "hrm",
+      "description": "Quản lý nhân sự"
+    },
+    {
+      "name": "fm",
+      "description": "Quản lý tài chính"
+    },
+    {
+      "name": "m",
+      "description": "Quản lý"
+    },
+    {
+      "name": "per",
+      "description": "Nhân viên"
+    }
+  ],
+  "WorkShiftSeeder": [
+    {
+      "shift_name": "Ca sáng",
+      "start_time": "08:00:00",
+      "end_time": "12:00:00",
+      "break_time": 0
+    },
+    {
+      "shift_name": "Ca chiều",
+      "start_time": "13:00:00",
+      "end_time": "17:00:00",
+      "break_time": 0
+    },
+    {
+      "shift_name": "Cả ngày",
+      "start_time": "08:00:00",
+      "end_time": "17:00:00",
+      "break_time": 60
+    }
+  ],
+  "SalarySeeder": [
+    {
+      "salary_level": "Cấp 1",
+      "basic_salary": 8000000.00,
+      "base_coefficient": 1.0
+    },
+    {
+      "salary_level": "Cấp 2",
+      "basic_salary": 10000000.00,
+      "base_coefficient": 1.5
+    },
+    {
+      "salary_level": "Cấp 3",
+      "basic_salary": 12000000.00,
+      "base_coefficient": 2.0
+    },
+    {
+      "salary_level": "Cấp 4",
+      "basic_salary": 15000000.00,
+      "base_coefficient": 2.5
+    },
+    {
+      "salary_level": "Cấp 5",
+      "basic_salary": 20000000.00,
+      "base_coefficient": 3.0
+    }
+  ],
+  "TaskSeeder": [
+    {
+      "title": "Hoàn thành báo cáo tháng",
+      "description": null,
+      "assigned_by_id": 1,
+      "assigned_to_id": 5,
+      "assigned_date": "2025-05-18",
+      "start_date": "2025-05-19",
+      "end_date": null,
+      "due_date": "2025-05-25",
+      "status": "Pending",
+      "priority": "High"
+    },
+    {
+      "title": "Kiểm tra hệ thống",
+      "description": null,
+      "assigned_by_id": 1,
+      "assigned_to_id": 6,
+      "assigned_date": "2025-05-18",
+      "start_date": "2025-05-20",
+      "end_date": null,
+      "due_date": "2025-05-26",
+      "status": "Pending",
+      "priority": "Medium"
+    }
+  ],
+  "UserSeeder": [
+    {
+      "name": "User1",
+      "email": "admin@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User2",
+      "email": "hrm@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User3",
+      "email": "fm@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User4",
+      "email": "m@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User5",
+      "email": "user5@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User6",
+      "email": "user6@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User7",
+      "email": "user7@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User8",
+      "email": "user8@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User9",
+      "email": "user9@company.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "name": "User10",
+      "email": "user10@company.com",
+      "password": "hashed_password_here"
+    }
+  ],
+  "WorkDateStatusSeeder": [
+    {
+      "name": "Ngày lễ",
+      "description": "Ngày lễ theo quy định"
+    },
+    {
+      "name": "Ngày thường",
+      "description": "Ngày làm việc bình thường"
+    },
+    {
+      "name": "Ngày nghỉ",
+      "description": "Ngày nghỉ theo lịch"
+    }
+  ],
+  "WorkScheduleSeeder": [
+    {
+      "employee_id": 1,
+      "status_id": 2,
+      "shift_id": 3,
+      "work_date": "2025-05-18",
+      "is_day_off": false
+    },
+    {
+      "employee_id": 2,
+      "status_id": 2,
+      "shift_id": 3,
+      "work_date": "2025-05-18",
+      "is_day_off": false
+    }
+  ]
+}

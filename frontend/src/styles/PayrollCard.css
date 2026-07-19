@@ -1,0 +1,57 @@
+/* Quy định cho container chứa các card */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Quy định cho từng card */
+.payroll-card {
+  background-color: var(--text-primary);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Quy định cho tiêu đề card */
+.card-title {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--brand-dark);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Quy định cho giá trị trong card */
+.card-value {
+  font-family: 'Newsreader', serif;
+  font-size: 20px;
+  color: #343a40;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Quy định cho giá trị tiền lương */
+.card-currency {
+  font-family: 'Newsreader', serif;
+  font-size: 18px;
+  color: #28a745; /* Màu xanh lá cho tiền lương */
+  text-align: center;
+}
+
+/* Quy định cho tiêu đề phần (section header) */
+.section-title {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--brand-dark);
+  margin: 24px 0 16px;
+  text-align: center;
+}

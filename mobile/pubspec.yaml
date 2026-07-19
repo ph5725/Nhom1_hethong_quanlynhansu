@@ -1,0 +1,33 @@
+name: mobile
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Gọi API
+  dio: ^5.4.2  # hoặc dùng http nếu muốn đơn giản hơn
+  # Quét mã QR
+  mobile_scanner: ^7.0.1
+  # (Tuỳ chọn) Xử lý JSON (nếu dùng manual JSON decode)
+  flutter_json_view: ^1.0.0 # hoặc json_annotation nếu dùng build_runner
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.5.3
+  provider: ^6.1.5
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

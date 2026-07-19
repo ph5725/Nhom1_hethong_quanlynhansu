@@ -1,0 +1,79 @@
+  /* Điều chỉnh bảng (dành cho UserShow) */
+  .table-wrapper {
+    overflow-x: auto;
+    width: 100%; /* Đảm bảo bảng không tràn ra ngoài */
+    margin-top: 24px; /* Khoảng cách trên bảng */
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: var(--brand-dark); /* Nền bảng màu trắng */
+    border-radius: 16px; /* Bo tròn góc bảng */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bóng nhẹ cho bảng */
+    overflow: hidden; /* Đảm bảo bo tròn góc hoạt động với border-collapse */
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 12px 15px; /* Tăng padding cho cell */
+    border-bottom: 1px solid #dee2e6; /* Viền dưới cho mỗi hàng */
+    
+  }
+
+  .table th {
+    background-color: var(--brand-dark); /* Màu nền cho header bảng là brand-light */
+    font-family: 'Gelasio', serif;
+    font-weight: bold;
+    color: var(--brand-light); /* Màu chữ là brand-dark */
+    border-top: 1px solid #dee2e6; /* Viền trên cho header */
+    text-align: center; /* Căn giữa tiêu đề cột */
+    min-width: 10px;
+    width: fit-content;
+  }
+
+  .table td {
+    color: #343a40; /* Màu chữ cho nội dung bảng */
+    font-family: 'Newsreader', serif;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .table th:first-child,
+  .table td:first-child {
+    width: 50px;
+    text-align: center;
+  }
+
+  .table .action {
+    width: 120px; /* Tăng chiều rộng cột action */
+    text-align: center;
+  }
+
+  .table .icon {
+    cursor: pointer;
+    margin: 0 6px; /* Tăng khoảng cách giữa các icon */
+    font-size: 18px; /* Tăng kích thước icon */
+    color: var(--brand-dark); /* Màu icon */
+  }
+
+  .table .icon:hover {
+    color: #007bff; /* Màu icon khi hover */
+  }
+
+  .table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Màu nền cho hàng lẻ */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--brand-light); /* Màu nền cho hàng chẵn */
+}
+
+/* Tùy chọn: Thêm hiệu ứng hover cho các hàng */
+.table tbody tr:hover {
+  background-color: #f0f0f0; /* Màu nền khi di chuột qua hàng */
+  cursor: pointer;
+}

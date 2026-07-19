@@ -1,0 +1,144 @@
+/* .footer-custom {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-custom h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-custom h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 30px;
+  height: 2px;
+  background-color: #ff0000;
+}
+
+.footer-custom p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-custom .nav-link {
+  color: #cccccc !important;
+  font-size: 14px;
+  padding: 5px 0 !important;
+  text-decoration: none;
+}
+
+.footer-custom .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.footer-custom .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #333333;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-custom .social-icon:hover {
+  background-color: #555555;
+}
+
+.footer-custom .contact-link {
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.footer-custom .contact-link:hover {
+  color: #ffffff !important;
+} */
+
+.footer-custom {
+  background-color: var(--brand-dark); /* Thay đổi thành màu Brand Dark */
+  color: var(--text-primary);
+  padding: 40px 0;
+}
+
+.footer-custom h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-custom h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--error);
+}
+
+.footer-custom p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer-custom .nav-link {
+  color: var(--text-secondary) !important;
+  font-size: 14px;
+  padding: 5px 0 !important;
+  text-decoration: none;
+}
+
+.footer-custom .nav-link:hover {
+  color: var(--text-primary) !important;
+}
+
+.footer-custom .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--brand-light); /* Dùng Brand Light để tương phản */
+  border-radius: 50%;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-custom .social-icon:hover {
+  background-color: var(--hint); /* Dùng Hint khi hover */
+}
+
+.footer-custom .contact-link {
+  color: var(--text-secondary) !important;
+  text-decoration: none;
+}
+
+.footer-custom .contact-link:hover {
+  color: var(--text-primary) !important;
+}
+
+/* Bottom Section trong footer */
+.footer-custom .mt-4 p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.footer-custom .mt-4 a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.footer-custom .mt-4 a:hover {
+  color: var(--text-primary);
+}

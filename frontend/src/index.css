@@ -1,0 +1,137 @@
+/* Biến CSS cho màu sắc */
+:root {
+    --brand-light: #E0F2F7;
+    --brand-dark: #0D47A1;
+  --success: #4CAF50;
+  --hint: #FFECB3;
+  --error: #FF6E71;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --background-dark: #1a1a1a;
+}
+
+/* Font chữ */
+body {
+  font-family: 'Newsreader', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gelasio', serif;
+}
+
+.title {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.subtitle {
+  font-family: 'Gelasio', serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.content {
+  font-family: 'Newsreader', serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.menu-title {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-content {
+  font-family: 'Newsreader', serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.menu-content:hover {
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.hint {
+  font-family: 'Newsreader', serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--hint);
+}
+
+/* Quy định cho button */
+.btn-light {
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  border: 1px solid var(--brand-dark);
+  padding: 8px 16px;
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-light:hover,
+.btn-light:active {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-light);
+  color: var(--brand-light);
+}
+
+.btn-dark {
+  background-color: var(--brand-dark);
+  color: var(--text-primary);
+  border: 1px solid var(--brand-light);
+  padding: 8px 16px;
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-dark:hover,
+.btn-dark:active {
+  background-color: var(--brand-light);
+  border-color: var(--brand-dark);
+  color: var(--brand-dark);
+}
+
+/* Container chung cho textfield */
+.textfield-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--brand-light);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  gap: 8px;
+}
+
+/* Icon bên trái */
+.textfield-wrapper .icon {
+  font-size: 18px;
+  color: var(--brand-dark);
+}
+
+/* Input chính */
+.textfield-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Newsreader', serif;
+  color: var(--brand-dark);
+  flex: 1;
+}
+
+/* Trạng thái focus hoặc có nội dung */
+.textfield-wrapper:focus-within {
+  border-color: var(--brand-dark);
+  box-shadow: 0 0 0 1px var(--brand-dark);
+}
+

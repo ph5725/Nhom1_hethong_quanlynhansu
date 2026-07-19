@@ -1,0 +1,229 @@
+/* Quy định cho container chính */
+.user-container {
+  padding: 36px;
+  max-width: 100%;
+  background-color: #ffffff; /* Màu nền tổng thể giống hình ảnh */
+  min-height: 100vh; /* Đảm bảo chiều cao đủ để thấy màu nền */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa nội dung theo chiều ngang */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+/* Quy định cho tiêu đề trang */
+.page-title {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--brand-dark);
+  margin-bottom: 24px; /* Tăng khoảng cách dưới tiêu đề để phù hợp với hình ảnh */
+  text-align: center;
+}
+
+/* Quy định cho thông báo lỗi */
+.error-message {
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  color: var(--error);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Quy định cho card chứa form */
+.form-card {
+  /* background-color: var(--text-primary); Màu nền trắng */
+  padding: 24px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  max-width: 500px;
+  width: 100%; /* Đảm bảo card chiếm đủ chiều rộng trên các màn hình nhỏ */
+  margin: 0 auto;
+  /* border: 1px solid #dee2e6; Thêm viền giống hình */
+}
+
+/* Quy định cho group input trong form */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* Quy định cho label */
+.form-label {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--brand-dark);
+  margin-bottom: 8px;
+  display: block; /* Đảm bảo label nằm trên input */
+}
+
+.form-check {
+  font-family: 'Gelasio', serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--brand-dark);
+  margin-bottom: 8px;
+  display: block; /* Đảm bảo label nằm trên input */
+}
+
+/* Quy định cho các input text và textarea (Employee, Note) */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  font-family: 'Newsreader', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057; /* Màu chữ mặc định */
+  background-color: var(--text-primary); /* Nền trắng */
+  background-clip: padding-box;
+  border: 1px solid #ced4da; /* Màu viền input mặc định giống Bootstrap */
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control::placeholder {
+  color: #6c757d; /* Màu placeholder */
+  opacity: 1;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: var(--text-primary);
+  border-color: #80bdff; /* Màu viền khi focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Box shadow khi focus */
+}
+
+/* Quy định cho textarea */
+textarea.form-control {
+  min-height: 80px; /* Chiều cao tối thiểu cho textarea */
+  resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+}
+
+/* Quy định cho select (Leave Type) */
+.form-select {
+  font-family: 'Newsreader', serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Màu viền input mặc định giống Bootstrap */
+  border-radius: 4px;
+  background-color: var(--text-primary); /* Đổi màu nền select về màu trắng */
+  color: #495057; /* Màu chữ mặc định */
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  -webkit-appearance: none; /* Bỏ giao diện mặc định của select trên Webkit */
+  -moz-appearance: none; /* Bỏ giao diện mặc định của select trên Mozilla */
+  appearance: none; /* Bỏ giao diện mặc định của select */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); /* Thêm icon mũi tên */
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+/* Tùy chỉnh cho textfield-wrapper (date picker - Leave Date) */
+.textfield-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--text-primary); /* Đổi màu nền về trắng */
+  padding: 10px 14px;
+  border-radius: 4px; /* Giảm border-radius để giống hình */
+  border: 1px solid #ced4da; /* Màu viền mặc định */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  gap: 8px;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+}
+
+.textfield-wrapper:focus-within {
+  border-color: #80bdff; /* Màu viền khi focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Box shadow khi focus */
+}
+
+/* Icon bên phải cho date picker */
+.textfield-wrapper .icon {
+  font-size: 18px;
+  color: #6c757d; /* Màu icon calendar */
+  cursor: pointer; /* Biến thành con trỏ khi di chuột qua */
+}
+
+/* Input chính trong textfield-wrapper (date input) */
+.textfield-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Newsreader', serif;
+  color: #495057; /* Màu chữ */
+  flex: 1;
+}
+
+/* Quy định cho nhóm nút trong form */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 24px; /* Tăng khoảng cách trên nhóm nút */
+}
+
+/* Điều chỉnh khoảng cách cho biểu tượng trong nút */
+.btn-icon {
+  margin-right: 8px;
+}
+
+/* Nút Cancel */
+.btn-cancel {
+  background-color: #6c757d; /* Màu xám */
+  color: var(--text-primary);
+  border: 1px solid #6c757d;
+  padding: 8px 16px;
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Nút Save */
+.btn-save {
+  background-color: var(--brand-dark); /* Màu xanh đậm từ biến */
+  color: var(--text-primary);
+  border: 1px solid var(--brand-dark);
+  padding: 8px 16px;
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-save:hover {
+  background-color: #0056b3; /* Một màu xanh đậm hơn khi hover */
+  border-color: #0056b3;
+}
+
+/* Quy định cho nút Add (nằm dưới tiêu đề) */
+.btn-add {
+  background-color: var(--brand-dark);
+  color: var(--text-primary);
+  border: 1px solid var(--brand-light);
+  padding: 8px 16px;
+  font-family: 'Newsreader', serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 16px; /* Khoảng cách từ tiêu đề */
+  margin-bottom: 24px; /* Khoảng cách đến các phần tử dưới */
+}
+
+.btn-add:hover,
+.btn-add:active {
+  background-color: var(--brand-light);
+  border-color: var(--brand-dark);
+  color: var(--brand-dark);
+}
